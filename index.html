@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfilbildGen</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="sketch.js" type="module" defer></script>
 </head>
+
 <body>
-    
+    <div class="container containerPadding">
+        <div class="left">
+            <main id="p5Container">
+                <canvas id="canvas"></canvas>
+            </main>
+        </div>
+
+        <div class="right controls">
+            <div class="part1">
+                <div class="previewImage">
+                    <img id="imageBefore" src="#" alt="Input Preview Image">
+                </div>
+
+                <input type="file" accept=".jpg, .jpeg, .png" id="loadImage">
+            </div>
+
+            <div class="part2">
+                <div class="horizontal">
+                    <label for="autoRedraw">Auto Redraw when Options change:</label>
+                    <input id="autoRedraw" type="checkbox" checked>
+                </div>
+
+                <div class="horizontal">
+                    <label for="backgroundColor">Background Color:</label>
+                    <input id="backgroundColor" type="color" value="#181819">
+                </div>
+
+                <div class="horizontal">
+                    <label for="filterSelect">Filter:</label>
+                    <select id="filterSelect">
+                        <option value="filter1" selected>Yellow Mix</option>
+                        <option value="filter2">Blue Circle</option>
+                        <option value="filter3">Red Stars</option>
+                        <option value="filter4">Green Mix</option>
+                    </select>
+                </div>
+
+                <div class="horizontal">
+                    <label for="quality">Quality:</label>
+                    <input type="range" id="quality" min="1" max="15" value="3">
+                    <p id="qualityDisplayValue">3</p>
+                </div>
+                
+            </div>
+
+            <div class="part3">
+                <span style="display: block;">Rendertime: <span id="renderTime">0</span>ms</span>
+                <button id="redraw">Redraw</button>
+                <button id="save">Save Image</button>
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>
