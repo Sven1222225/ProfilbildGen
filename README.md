@@ -52,7 +52,7 @@
 
 Es gibt mehrere Möglichkeiten, das Projekt lokal oder online zu starten:
 
-### ✅ 1. Mit Visual Studio Code (Live Server)
+### ✅ 1. Mit Visual Studio Code 
 Direkt über index.html
 
 - Im Code-Editor (z. B. Visual Studio Code oder WebStorm)  
