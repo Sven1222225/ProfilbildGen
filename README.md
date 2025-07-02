@@ -31,17 +31,19 @@
 
 ## 📦 Projektstruktur
 
+<pre>
 ├── index.html
 ├── main.js
-├── /filters/
-│ ├── filter1/
-│ ├── filter2/
-│ ├── filter3/
-│ └── filter4/
-├── /assets/
-│ └── /symbols/
-├── /style/
-│ └── styles.css
+├── filters/
+│   ├── filter1/
+│   ├── filter2/
+│   ├── filter3/
+│   └── filter4/
+├── assets/
+│   └── symbols/
+├── style/
+│   └── styles.css
+</pre>
 
 
 ## ▶️ Nutzung
